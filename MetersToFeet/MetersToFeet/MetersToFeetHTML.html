@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Meters to Feet</title>
+</head>
+<body>
+    <div id="app">
+        <input v-model="meters" />
+        <button v-on:click="changingNums">Convert</button>
+        Output:
+        <p>
+            {{feet}}
+
+        </p>
+
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+
+           feet: -1,
+            meters: -1,
+           
+
+
+        },
+        methods: {
+            changingNums: function ()
+            {
+                this.feet = this.meters / 3.28;
+            }
+        }
+    })
+</script>
