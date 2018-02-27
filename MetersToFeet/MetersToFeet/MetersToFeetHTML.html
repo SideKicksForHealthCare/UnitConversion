@@ -3,13 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <title>Meters to Feet</title>
+    <link rel="stylesheet" type="text/css" href="meterStyle.css">
 </head>
 <body>
+    <div id="header">
+        <h1>Meters to Feet</h1>
+    </div>
     <div id="app">
         <input v-model="meters" />
         <button v-on:click="changingNums">Convert</button>
-        Output:
+       
         <p>
+            Output:
             {{feet}}
 
         </p>
@@ -32,7 +37,7 @@
         methods: {
             changingNums: function ()
             {
-                this.feet = this.meters / 3.28;
+                this.feet = this.meters * 3.28;
             }
         }
     })

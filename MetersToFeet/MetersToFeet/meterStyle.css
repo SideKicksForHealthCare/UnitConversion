@@ -1,0 +1,11 @@
+﻿body {
+}
+#app{
+    clear: both;
+}
+#header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 150px;
+    text-align: center;
+    background-color: #ffa81e;
+}

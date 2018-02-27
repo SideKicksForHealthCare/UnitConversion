@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetersToFeetHTML.html" />
+    <Content Include="meterStyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
