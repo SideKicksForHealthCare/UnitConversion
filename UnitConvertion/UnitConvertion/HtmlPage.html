@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Unit Conversion</h1>
+    <h2>Pounds</h2>
+    <div id="app">
+        <input v-model="inputPounds" />
+        <button v-on:click="addInputs">Convert</button>
+        <h2>Kilos</h2>
+        {{outputKilos}}
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            inputPounds: 0.0,
+            outputKilos: 0.0,
+        },
+        methods: {
+            addInputs: function () {
+                this.outputKilos = this.inputPounds * 0.453592;
+            }
+        }
+    })
+</script>
