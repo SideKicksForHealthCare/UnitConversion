@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Number 15, Burger King Foot Lettuce. The last thing you want in your Burger King burger is someone else's foot fungus. Unfortunately for you, that may be what you get.
+    </title>
+</head>
+<body>
+
+    <p>
+        <label>Horses</label>
+        <input id="inputHorse" type="number" placeholder="Horses"
+               oninput="lengthConverter(this.value)" onchange="lengthConverter(this.value)">
+    </p>
+    <p>Manhattan Blocks: <span id="outputBlocks"></span></p>
+
+    <script>
+        function lengthConverter(valNum) {
+            document.getElementById("outputBlocks").innerHTML = valNum * 0.00888888888;
+        } 
+    </script>
+
+</body>
+</html>
