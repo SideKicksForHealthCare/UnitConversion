@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Grams to Ounce
+    </title>
+</head>
+<body>
+
+    <p>
+        <label>Grams</label>
+        <input id="inputGrams" type="number" placeholder="Grams"
+               oninput="lengthConverter(this.value)" onchange="lengthConverter(this.value)">
+    </p>
+    <p>Ounces: <span id="outputOunces"></span></p>
+
+    <script>
+        function lengthConverter(valNum) {
+            document.getElementById("outputOunces").innerHTML = valNum * 0.035274;
+        }
+    </script>
+
+</body>
+</html>
